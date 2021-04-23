@@ -20,3 +20,4 @@ def plot_random_sample(X_train, y_train):
 
     ax2.imshow(y_train[ix].squeeze(), cmap='gray', interpolation='bilinear')
     ax2.set_title('Salt')
+    plt.show()
