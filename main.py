@@ -9,6 +9,6 @@ if __name__ == '__main__':
     X_train, X_valid, y_train, y_valid = loader.load_dataset()
     SegNet.plot_random_sample(X_train, y_train)
 
-    # model: SegNet.SegNetModel = SegNet.SegNetModel()
-    # model.summary()
-    # model.fit(X_train, y_train, val_data=(X_valid, y_valid))
+    model: SegNet.SegNetModel = SegNet.SegNetModel()
+    model.summary()
+    model.fit(X_train, y_train, val_data=(X_valid, y_valid))
