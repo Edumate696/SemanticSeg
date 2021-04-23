@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "SemanticSeg"
+version = "0.0.1-alpha.0"
+
+description = "SemanticSeg Demonstration"
+readme = "README.md"
+homepage = "https://github.com/Edumate696"
+repository = "https://github.com/Edumate696/SemanticSeg"
+license = "MIT"
+authors = ["Arpan Mahanty <arpan.mahanty.007@gmail.com>"]
+packages = [{include = "SegNet"}]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+tensorflow = "^2.4.1"
+
+[tool.poetry.scripts]
+SegNet = "SegNet.__main__:main"
+
+[tool.poetry.dev-dependencies]
+kaggle = "^1.5.12"
+
+[build-system]
+requires = ["poetry>=1.0.2"]
+build-backend = "poetry.masonry.api"
+
