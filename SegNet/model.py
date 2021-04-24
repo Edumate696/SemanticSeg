@@ -106,3 +106,7 @@ class SegNetModel:
 
     def get_model(self) -> Model:
         return self.__model
+
+    def load_weights(self):
+        self.__model.load_weights(self.__checkpoint_path)
+        return self
